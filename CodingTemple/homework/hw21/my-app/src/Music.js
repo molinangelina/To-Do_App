@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import './Main.css';
+import './App.css';
 
 export default class Music extends Component {
   render() {
