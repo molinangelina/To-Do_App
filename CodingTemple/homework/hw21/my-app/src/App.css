@@ -34,3 +34,18 @@ body {
   height: 36px;
   padding: 4px 16px;
 }
+
+.taskBox {
+  color: black;
+  width: 300px;
+  margin: 20px auto;
+  height: 50px;
+  background-color: rgb(52, 255, 52);
+  border-radius: 30px;
+}
+
+.taskBox p {
+  padding: 10px;
+  position: absolute;
+  transition: ease-in-out;
+}

@@ -5,6 +5,8 @@ import Nav from './Nav'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import './App.css';
 import ToDo from './Todo'
+import SignUp from './SignUp'
+import Login from './Login'
 
 export default class App extends Component {
 
@@ -29,6 +31,8 @@ export default class App extends Component {
             <Route path='/' element={<Home greeting={this.state.greeting} />}/>
             <Route path='/music' element={<Music/>}/>
             <Route path='/todo' element={<ToDo title={this.state.title}/>}/>
+            <Route path='/login' element={<Login logMeIn={this.logMeIn}/>}/>
+            <Route path='/signup' element={<SignUp/>}/>
           </Routes>
 
           {/* BLOCK CONTENT */}
