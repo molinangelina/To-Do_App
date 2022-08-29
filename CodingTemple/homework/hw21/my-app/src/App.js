@@ -7,6 +7,8 @@ import './App.css';
 import ToDo from './Todo'
 import SignUp from './SignUp'
 import Login from './Login'
+import Shop from './Shop'
+import Cart from './Cart'
 
 export default class App extends Component {
 
@@ -25,17 +27,16 @@ export default class App extends Component {
           
           <Nav />
 
-          {/* BLOCK CONTENT */}
-
           <Routes>
             <Route path='/' element={<Home greeting={this.state.greeting} />}/>
             <Route path='/music' element={<Music/>}/>
             <Route path='/todo' element={<ToDo title={this.state.title}/>}/>
             <Route path='/login' element={<Login logMeIn={this.logMeIn}/>}/>
             <Route path='/signup' element={<SignUp/>}/>
+            <Route path='/shop' element={<Shop/>}/>
+            <Route path='/cart' element={<Cart/>}/>
           </Routes>
 
-          {/* BLOCK CONTENT */}
         </div>
       </BrowserRouter>
     )
